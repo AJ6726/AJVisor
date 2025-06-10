@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Driver Files">
+      <UniqueIdentifier>{8E41214B-6785-4CFE-B992-037D68949A14}</UniqueIdentifier>
+      <Extensions>inf;inv;inx;mof;mc;</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Architecture">
+      <UniqueIdentifier>{3ba6812c-cc46-4922-93b1-a903e131a65e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\OS">
+      <UniqueIdentifier>{23cc77c2-7b22-44bc-b882-83b54b396608}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Utility">
+      <UniqueIdentifier>{f51767bc-f8f7-4fb1-93b7-65807a8c9c39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Svm">
+      <UniqueIdentifier>{e04da055-eb3f-4673-8c9e-991334c200a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Asm">
+      <UniqueIdentifier>{5728adfe-810c-44be-b38a-b7f420a715bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Svm\Vmexit">
+      <UniqueIdentifier>{c4818d9b-9530-4a1d-962c-6ad3dfbcc76d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="control_register.h">
+      <Filter>Header Files\Architecture</Filter>
+    </ClInclude>
+    <ClInclude Include="cpuid.h">
+      <Filter>Header Files\Architecture</Filter>
+    </ClInclude>
+    <ClInclude Include="exceptions.h">
+      <Filter>Header Files\Architecture</Filter>
+    </ClInclude>
+    <ClInclude Include="msr.h">
+      <Filter>Header Files\Architecture</Filter>
+    </ClInclude>
+    <ClInclude Include="paging.h">
+      <Filter>Header Files\Architecture</Filter>
+    </ClInclude>
+    <ClInclude Include="machine_frame.h">
+      <Filter>Header Files\Architecture</Filter>
+    </ClInclude>
+    <ClInclude Include="rflags.h">
+      <Filter>Header Files\Architecture</Filter>
+    </ClInclude>
+    <ClInclude Include="segments.h">
+      <Filter>Header Files\Architecture</Filter>
+    </ClInclude>
+    <ClInclude Include="types.h">
+      <Filter>Driver Files</Filter>
+    </ClInclude>
+    <ClInclude Include="svm.h">
+      <Filter>Resource Files\Svm</Filter>
+    </ClInclude>
+    <ClInclude Include="vcore.h">
+      <Filter>Resource Files\Svm</Filter>
+    </ClInclude>
+    <ClInclude Include="wrappers.h">
+      <Filter>Resource Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="logger.h">
+      <Filter>Resource Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="hv.h">
+      <Filter>Resource Files\Svm</Filter>
+    </ClInclude>
+    <ClInclude Include="utility.h">
+      <Filter>Resource Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="pe.h">
+      <Filter>Header Files\OS</Filter>
+    </ClInclude>
+    <ClInclude Include="nt.h">
+      <Filter>Header Files\OS</Filter>
+    </ClInclude>
+    <ClInclude Include="pattern_scan.h">
+      <Filter>Resource Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="page_tables.h">
+      <Filter>Resource Files\Svm</Filter>
+    </ClInclude>
+    <ClInclude Include="vmcb.h">
+      <Filter>Resource Files\Svm</Filter>
+    </ClInclude>
+    <ClInclude Include="vmexit_codes.h">
+      <Filter>Resource Files\Svm\Vmexit</Filter>
+    </ClInclude>
+    <ClInclude Include="vmexit_handlers.h">
+      <Filter>Resource Files\Svm\Vmexit</Filter>
+    </ClInclude>
+    <ClInclude Include="context.h">
+      <Filter>Resource Files\Svm</Filter>
+    </ClInclude>
+    <ClInclude Include="event_injection.h">
+      <Filter>Resource Files\Svm</Filter>
+    </ClInclude>
+    <ClInclude Include="msr_pm.h">
+      <Filter>Resource Files\Svm</Filter>
+    </ClInclude>
+    <ClInclude Include="exit_info.h">
+      <Filter>Resource Files\Svm</Filter>
+    </ClInclude>
+    <ClInclude Include="hypercall.h">
+      <Filter>Resource Files\Svm\Vmexit</Filter>
+    </ClInclude>
+    <ClInclude Include="hyper_helpers.h">
+      <Filter>Resource Files\Svm\Vmexit</Filter>
+    </ClInclude>
+    <ClInclude Include="tlb_control.h">
+      <Filter>Resource Files\Svm</Filter>
+    </ClInclude>
+    <ClInclude Include="spinlock.h">
+      <Filter>Resource Files\Utility</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hv.cpp">
+      <Filter>Resource Files\Svm</Filter>
+    </ClCompile>
+    <ClCompile Include="utility.cpp">
+      <Filter>Resource Files\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="pattern_scan.cpp">
+      <Filter>Resource Files\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="vmexit_handlers.cpp">
+      <Filter>Resource Files\Svm\Vmexit</Filter>
+    </ClCompile>
+    <ClCompile Include="hyper_helpers.cpp">
+      <Filter>Resource Files\Svm\Vmexit</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="segment.asm">
+      <Filter>Resource Files\Asm</Filter>
+    </MASM>
+    <MASM Include="vmlaunch.asm">
+      <Filter>Resource Files\Asm</Filter>
+    </MASM>
+    <MASM Include="vmmcall.asm">
+      <Filter>Resource Files\Asm</Filter>
+    </MASM>
+  </ItemGroup>
+</Project>
